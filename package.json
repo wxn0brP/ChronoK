@@ -1,0 +1,26 @@
+{
+    "name": "chronok",
+    "version": "0.0.1",
+    "main": "src/index.ts",
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wxn0brp/ChronoK.git"
+    },
+    "homepage": "https://github.com/wxn0brp/ChronoK",
+    "author": "wxn0brP",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "start": "bun run src/index.ts",
+        "analyze": "bun run src/analyze.ts"
+    },
+    "devDependencies": {
+        "@types/bun": "*",
+        "typescript": "*"
+    },
+    "dependencies": {
+        "@wxn0brp/db": "^0.30.1",
+        "@wxn0brp/falcon-frame": "^0.0.21"
+    }
+}
