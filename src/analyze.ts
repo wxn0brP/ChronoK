@@ -9,6 +9,11 @@ function analyze(events: Evt[]) {
         return;
     }
 
+    if (events[events.length - 1].end === undefined) {
+        events[events.length - 1].end = Date.now();
+        console.log("Last event not ended, assuming now");
+    }
+
     const totalTime = events.reduce((sum, e) => sum + (e.end - e.start), 0);
 
     const avgTime = totalTime / events.length;
