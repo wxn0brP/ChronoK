@@ -1,8 +1,6 @@
 import { Evt } from "./types";
 import { formatTime, getData } from "./utils";
 
-
-
 function analyze(events: Evt[]) {
     if (!events.length) {
         console.log("No data to analyze");

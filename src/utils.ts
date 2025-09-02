@@ -1,6 +1,6 @@
 import { convertIdToUnix, Valthera } from "@wxn0brp/db";
-import { Evt } from "./types";
 import { $ } from "bun";
+import { Evt } from "./types";
 
 export const db = new Valthera("data");
 
