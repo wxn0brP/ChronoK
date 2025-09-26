@@ -13,4 +13,4 @@ app.get("/stop", async (req) => ({ ended: await stop(getName(req)) }));
 app.get("/toggle", (req) => toggle(getName(req), req.query.notify === "false" ? false : true));
 app.get("/clear", async (req) => ({ cleared: await db.removeCollection(getName(req)) }));
 
-app.listen(56_843, true);
+app.listen(+process.env.CHRONOK_PORT || 56_843, true);
