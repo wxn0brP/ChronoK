@@ -1,13 +1,25 @@
 import FalconFrame from "@wxn0brp/falcon-frame";
 import { db, getData, start, stop, toggle } from "./utils";
 
-const firstArg = process.argv[2];
-if (firstArg) process.env.CHRONOK_NAME = firstArg;
+let CHRONOK_NAME = "";
+
+let firstArg = process.argv[2];
+
+if (firstArg) {
+    CHRONOK_NAME = firstArg;
+} else if (process.env.CHRONOK_NAME) {
+    CHRONOK_NAME = process.env.CHRONOK_NAME;
+} else {
+    const date = new Date();
+    CHRONOK_NAME = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}/${date.getHours()}_${date.getMinutes()}`;
+}
+
+console.log(`CHRONOK_NAME: ${CHRONOK_NAME}`);
 
 const app = new FalconFrame();
 
 function getName(req: any) {
-    return req.query.name || process.env.CHRONOK_NAME || "ChronoK";
+    return req.query.name || CHRONOK_NAME;
 }
 
 app.get("/", (req) => getData(getName(req)));

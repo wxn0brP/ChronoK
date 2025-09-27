@@ -19,7 +19,7 @@ The server will start on port `56843`.
 - query arg (query parameter, e.g., `/?name=code-time`)
 - script (first argument passed to the script)
 - env (CHRONOK_NAME environment variable)
-- default ("ChronoK")
+- actual time
 
 The following endpoints are available:
 
