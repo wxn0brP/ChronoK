@@ -1,6 +1,9 @@
 import FalconFrame from "@wxn0brp/falcon-frame";
 import { db, getData, start, stop, toggle } from "./utils";
 
+const firstArg = process.argv[2];
+if (firstArg) process.env.CHRONOK_NAME = firstArg;
+
 const app = new FalconFrame();
 
 function getName(req: any) {

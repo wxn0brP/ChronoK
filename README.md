@@ -14,7 +14,14 @@ The server will start on port `56843`.
 
 ### API Endpoints
 
-The `name` of the timer can be provided as a query parameter (e.g., `/?name=code-time`). If not provided, it defaults to the `CHRONOK_NAME` environment variable or "ChronoK".
+`name` can be provided in any of the following ways:
+
+- query arg (query parameter, e.g., `/?name=code-time`)
+- script (first argument passed to the script)
+- env (CHRONOK_NAME environment variable)
+- default ("ChronoK")
+
+The following endpoints are available:
 
 *   `GET /`: Get all events for a given name.
 *   `GET /start?name=$name`: Start a new event.
