@@ -26,7 +26,7 @@ The following endpoints are available:
 *   `GET /`: Get all events for a given name.
 *   `GET /start?name=$name`: Start a new event.
 *   `GET /stop?name=$name`: Stop the last event.
-*   `GET /toggle?name=$name&notify=true`: Toggle the timer. A desktop notification will be sent if `notify-send` is available.
+*   `GET /toggle?name=$name`: Toggle the timer. A desktop notification will be sent if `notify-send` is available.
 *   `GET /clear?name=$name`: Clear all events for a name.
 
 ### Running the Analysis
