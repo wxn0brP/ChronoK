@@ -20,7 +20,7 @@
         "typescript": "*"
     },
     "dependencies": {
-        "@wxn0brp/db": "^0.40.0",
+        "@wxn0brp/db": "^0.41.0",
         "@wxn0brp/falcon-frame": "^0.2.1"
     }
 }
