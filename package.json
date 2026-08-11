@@ -5,9 +5,9 @@
     "description": "",
     "repository": {
         "type": "git",
-        "url": "https://github.com/wxn0brp/ChronoK.git"
+        "url": "https://github.com/wxn0brP/ChronoK.git"
     },
-    "homepage": "https://github.com/wxn0brp/ChronoK",
+    "homepage": "https://github.com/wxn0brP/ChronoK",
     "author": "wxn0brP",
     "license": "MIT",
     "type": "module",
@@ -17,10 +17,11 @@
     },
     "devDependencies": {
         "@types/bun": "*",
-        "typescript": "^5"
+        "@wxn0brp/biome": "*",
+        "typescript": "^7"
     },
     "dependencies": {
-        "@wxn0brp/db": "^0.40.0",
-        "@wxn0brp/falcon-frame": "^0.2.1"
+        "@wxn0brp/db": "^0.112.1",
+        "@wxn0brp/falcon-frame": "^0.9.0"
     }
 }

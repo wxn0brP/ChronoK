@@ -1,6 +1,8 @@
 # ChronoK
 
-ChronoK is a simple yet powerful time-tracking tool. It provides a web API to start, stop, and toggle time-tracking for different tasks, and a script to analyze the tracked time.
+ChronoK is a simple yet powerful time-tracking tool.
+It provides a web API to start, stop, and toggle time-tracking for different tasks,
+and a script to analyze the tracked time.
 
 ## Usage
 
@@ -56,4 +58,4 @@ curl http://localhost:56843/toggle
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+MIT License.
